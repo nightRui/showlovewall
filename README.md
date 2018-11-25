@@ -1,8 +1,10 @@
 # showlovewall
 觅思树洞
 
-##伪静态
+#伪静态
+
 #Apache
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -17,8 +19,11 @@ rewrite ^/mous/(.*)/page/(.*)$ /index.php?mous=$1&page=$2;
 rewrite ^/mous/(.*)$ /index.php?mous=$1&page=1;
 rewrite ^/pages/(.*)$ /index.php?pages=$1;
 Copy
+
 ##数据库说明
+
 #导入数据库
+
 先将根目录内的 options.sql 和 contents.sql 导入数据库
 
 #连接数据库
