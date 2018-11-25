@@ -8,9 +8,8 @@
         <input id="name" placeholder="名称" <?php if(isset($_COOKIE["name"])){echo 'value="'.$_COOKIE["name"].'"';} ?>>
         <h2>性别</h2>
         <div class="radio">
-        <input type="radio" name="sex" value="0" <?php if(isset($_COOKIE["sex"])&&$_COOKIE["sex"]=="0"){echo 'checked="checked"';} ?>><label>秀吉</label>
-        <input type="radio" name="sex" value="1" <?php if(isset($_COOKIE["sex"])&&$_COOKIE["sex"]=="1"){echo 'checked="checked"';} ?>><label>汉纸</label>
-        <input type="radio" name="sex" value="2" <?php if(isset($_COOKIE["sex"])&&$_COOKIE["sex"]=="2"){echo 'checked="checked"';} ?>><label>妹纸</label>
+        <input type="radio" name="sex" value="0" <?php if(isset($_COOKIE["sex"])&&$_COOKIE["sex"]=="0"){echo 'checked="checked"';} ?>><label>汉纸</label>
+        <input type="radio" name="sex" value="1" <?php if(isset($_COOKIE["sex"])&&$_COOKIE["sex"]=="0"){echo 'checked="checked"';} ?>><label>妹纸</label>
         </div>
         <h2>是否匿名</h2>
         <input id="n3" type="radio" name="ismous" value="1">
